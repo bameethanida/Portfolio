@@ -1,9 +1,6 @@
 {% load static %}
 <!-- 
-<h2>Hello World</h2>
-
 <img src="{% static 'images/profile.jpg' %}">
-
 -->
 
 <!DOCTYPE html>
@@ -13,9 +10,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Thanida J.</title>
     <link href="{% static '/css/main.css' %}" rel="stylesheet" type="text/css">
-
+    <link href="{% static '/images/code.png'%}" rel="icon">
 </head>
 <body>
-    
+
+    <nav>
+        <a class="logo" href="#">THANIDA J.</a>
+         <label aria-hidden="true" for="toggle"><i class="fas fa-bars"></i></label>
+        <ul>
+          <li><a class="link" href="#">ABOUT</a></li>
+          <li><a class="link" href="#">EXPERIENCES</a></li>
+          <li><a class="link" href="#">PROJECTS</a></li>
+          <li><a class="link" href="#">CONTACT</a></li>
+        </ul>
+      </nav>
+
 </body>
 </html>
