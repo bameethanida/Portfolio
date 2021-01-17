@@ -1,4 +1,8 @@
 from django.shortcuts import render
+from django.http import HttpResponse, HttpResponseRedirect
+from django.core.mail import BadHeaderError
+from django.contrib import messages
+from .forms import ContactForm
 
 
 def home(request):
@@ -17,5 +21,13 @@ def activities(request):
     return render(request, 'activities.html')
 
 def contact(request):
-    return render(request, 'contact.html')
-
+    if request.method == 'POST':
+        form = ContactForm(request.POST)
+        if form.is_valid():
+            email = form.cleaned_data['email']
+            subject = form.cleaned_data['subject']
+            message = form.cleaned_data['message']
+            
+    else:
+        form = ContactForm()
+    return render(request, 'contact.html', {'form': form})
