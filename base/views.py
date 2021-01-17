@@ -13,5 +13,9 @@ def experiences(request):
 def projects(request):
     return render(request, 'projects.html')
 
+def activities(request):
+    return render(request, 'activities.html')
+
 def contact(request):
     return render(request, 'contact.html')
+
