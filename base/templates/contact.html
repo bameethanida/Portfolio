@@ -1,0 +1,142 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="IE=edge" http-equiv="X-UA-Compatible">
+    <meta content="width=device-width,initial-scale=1" name="viewport">
+    <meta content="description" name="description">
+    <meta name="google" content="notranslate" />
+    <meta content="Mashup templates have been developped by Orson.io team" name="author">
+    <meta name="msapplication-tap-highlight" content="no">
+    <title>Thanida J.</title> 
+    <link href="{% static '/images/code.png' %}" rel="icon"> 
+    <link href="{% static '/css/about.css' %}" rel="stylesheet" type="text/css">
+      
+</head>
+
+<body class="">
+<div id="site-border-left"></div>
+<div id="site-border-right"></div>
+<div id="site-border-top"></div>
+<div id="site-border-bottom"></div>
+
+<header>
+  <nav class="navbar  navbar-fixed-top navbar-default">
+    <div class="container">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+
+      <div class="collapse navbar-collapse" id="navbar-collapse">
+        <ul class="nav navbar-nav ">
+            <li><a href="{% url 'Resume:home' %}" title="">01 : Home</a></li>
+            <li><a href="{% url 'Resume:aboutme' %}" title="">02 : About me</a></li>
+            <li><a href="{% url 'Resume:experiences' %}" title="">03 : Experiences & Awards</a></li>
+            <li><a href="{% url 'Resume:projects' %}" title="">04 : Projects</a></li>
+            <li><a href="{% url 'Resume:activities' %}" title="">05 : Extracurricular Activities</a></li>
+            <li><a href="{% url 'Resume:contact' %}" title="">06 : Contact</a></li>
+        </ul>
+
+      </div> 
+    </div>
+  </nav>
+</header>
+
+<div class="section-container">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <div class="section-container-spacer text-center">
+            <h1 class="h2">06 : Contact</h1>
+          </div>
+          
+          <div class="row">
+            <div class="col-md-10 col-md-offset-1">
+               <form action="" class="reveal-content">
+                  <div class="row">
+                      <!-- box heree -->
+                    <!-- <div class="col-md-7">
+                      <div class="form-group">
+                        <input type="email" class="form-control" id="email" placeholder="Email">
+                      </div>
+                      <div class="form-group">
+                        <input type="text" class="form-control" id="subject" placeholder="Subject">
+                      </div>
+                      <div class="form-group">
+                        <textarea class="form-control" rows="5" placeholder="Enter your message"></textarea>
+                      </div>
+                      <button type="submit" class="btn btn-default btn-lg">Send</button>
+                    </div> -->
+                        <!-- box heree -->
+                    <div class="col-md-5 address-container">
+                      <ul class="list-unstyled">
+                        <li>
+                          <span class="fa-icon">
+                            <i class="fa fa-phone" aria-hidden="true"></i>
+                          </span>
+                          +66 89 202 5811
+                        </li>
+                        <li>
+                          <span class="fa-icon">
+                            <i class="fa fa-at" aria-hidden="true"></i>
+                          </span>
+                          thanida.jo@ku.th
+                        </li>
+                        <li>
+                          <span class="fa-icon">
+                            <i class="fa fa fa-map-marker" aria-hidden="true"></i>
+                          </span>
+                          90 Tiwanon Road, Talad Kwan, Muang, Nonthaburi 11000
+                        </li>
+                      </ul>
+                      <h3>Follow me on</h3>
+
+                      <a href="https://www.facebook.com/bamee.thanida/" title="" class="fa-icon">
+                        <i class="fa fa-facebook"></i>
+                      </a>
+                      <a href="https://www.instagram.com/bameethanida/" title="" class="fa-icon">
+                        <i class="fa fa-instagram"></i>
+                      </a>
+                      <a href="https://github.com/bameethanida" title="" class="fa-icon">
+                        <i class="fa fa-github"></i>
+                      </a>
+                      
+
+
+                    </div>
+                  </div>
+                </form>
+            </div>
+
+          </div>
+         
+       </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer-container text-center">
+    <div class="container">
+      <div class="row">
+        <div class="col-xs-12">
+          <p>© SKE | Thanida Jongarnon</p>
+        </div>
+      </div>
+    </div>
+  </footer> 
+
+<script>
+  document.addEventListener("DOMContentLoaded", function (event) {
+     navActivePage();
+  });
+</script>
+
+
+<script type="text/javascript" src="{% static '/js/home.js' %}"></script></body>
+
+</html>
