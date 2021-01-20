@@ -26,7 +26,7 @@ SECRET_KEY = 't!i3s1*9b2*&n8*iz0$_i)+#jf7%41(6nma$#i^ql(7ww=8fd('
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['bameethanida.pythonanywhere.com']
+ALLOWED_HOSTS = ['bameethanida.pythonanywhere.com', 'localhost']
 
 
 # Application definition
@@ -120,7 +120,7 @@ USE_TZ = True
 # https://docs.djangoproject.com/en/3.1/howto/static-files/
 
 STATIC_URL = '/staticfiles/'
-MEDIA_URL = '/images/'
+STATIC_ROOT = '/home/bameethanida/Portfolio/static'
 
 STATICFILES_DIRS = [
     os.path.join(BASE_DIR, 'staticfiles')
