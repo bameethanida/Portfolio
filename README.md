@@ -14,8 +14,8 @@ Project setup
 * Install dependencies    
 `❯ pip3 install -r requirements.txt`  
 * Config the Database   
-`❯ python manage.py makemigrations`    
-`❯ python manage.py migrate` 
+`❯ python3 manage.py makemigrations`    
+`❯ python3 manage.py migrate` 
 
 Run project
 ---
