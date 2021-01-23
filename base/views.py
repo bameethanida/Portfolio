@@ -22,7 +22,6 @@ def activities(request):
     return render(request, 'activities.html')
 
 def contact(request):
-    print(request.POST)
     if request.method == 'POST':
         print(request)
         form = ContactForm(request.POST)

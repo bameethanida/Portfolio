@@ -1,7 +1,6 @@
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta content="IE=edge" http-equiv="X-UA-Compatible">
@@ -15,13 +14,11 @@
     <link href="{% static '/css/about.css' %}" rel="stylesheet" type="text/css">
       
 </head>
-
 <body class="">
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
 <div id="site-border-top"></div>
 <div id="site-border-bottom"></div>
-
 <header>
   <nav class="navbar  navbar-fixed-top navbar-default">
     <div class="container">
@@ -31,7 +28,6 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-
       <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav ">
             <li><a href="{% url 'Resume:home' %}" title="">01 : Home</a></li>
@@ -41,13 +37,10 @@
             <li><a href="{% url 'Resume:activities' %}" title="">05 : Extracurricular Activities</a></li>
             <li><a href="{% url 'Resume:contact' %}" title="">06 : Contact</a></li>
         </ul>
-
-
       </div> 
     </div>
   </nav>
 </header>
-
 <div class="section-container">
   <div class="container">
     <div class="row">
@@ -57,7 +50,6 @@
           <h1 class="h2">05 : Extracurricular Activities</h1>
         </div>
       </div>
-
       <div class="col-md-12">
      
       <div id="myCarousel" class="carousel slide projects-carousel">
@@ -65,30 +57,30 @@
             <div class="item active">
                 <div class="row">
                     <div class="col-sm-4">
-                        <img src="{% static '/images/ontour.jpg' %}" alt="" class="img-responsive">
+                        <img src="{% static '/images/ontour.jpg' %}" alt="" class="img-responsive img-size">
                       </a>
                       <div class="card-container card-container-lg">
                         <h4>001/006</h4>
                         <h3>On-Tour Camp #28</h3>
-                        <p>Volunteer teaching for Matthayom 6 student at Saiyokmaneekanwithaya School, Kanchanaburi</p>
+                        <p class="text-size">Volunteer teaching for Matthayom 6 student at Saiyokmaneekanwithaya School, Kanchanaburi</p>
                       </div>
                     </div>
                     <div class="col-sm-4">
-                        <img src="{% static '/images/cpsk.jpg' %}" alt="" class="img-responsive">
+                        <img src="{% static '/images/cpsk.jpg' %}" alt="" class="img-responsiv img-size">
                       </a>
                       <div class="card-container card-container-lg">
                         <h4>002/006</h4>
                         <h3>CPSK Freshy Day</h3>
-                        <p>Coordinating staff</p>
+                        <p class="text-size">Coordinating staff</p>
                       </div>
                     </div>
                     <div class="col-sm-4">
-                      <img src="{% static '/images/spk.jpg' %}" alt="" class="img-responsive">
+                      <img src="{% static '/images/spk.jpg' %}" alt="" class="img-responsive img-size">
                     </a>
                     <div class="card-container">
                       <h4>003/006</h4>
                       <h3>SOS Camp #9</h3>
-                      <p>Guest speaker for freshmen about university life, internship experiences, etc.</p>
+                      <p class="text-size">Guest speaker for freshmen about university life and study, internship experiences, etc.</p>
    
                     </div>
                       
@@ -102,34 +94,34 @@
                 <div class="row">
                   <div class="col-sm-4">
                   
-                    <img src="{% static '/images/byenior.jpg' %}" alt="" class="img-responsive">
+                    <img src="{% static '/images/byenior.jpg' %}" alt="" class="img-responsive img-size">
                   </a>
                   <div class="card-container card-container-lg">
                     <h4>004/006</h4>
                     <h3>Byenior Night SKE14</h3>
-                    <p>Committee Team for organize this event
+                    <p class="text-size">Committee Team for organize this event
                     </p>
                   </div>
                   </div>
                    <div class="col-sm-4">
-                    <img src="{% static '/images/es.jpg' %}" alt="" class="img-responsive">
+                    <img src="{% static '/images/es.jpg' %}" alt="" class="img-responsive img-size">
                       </a>
                       <div class="card-container">
                         <h4>005/006</h4>
                         <h3>Engineering Services Camp #31</h3>
-                        <p>Staff and TA on this camp</p>
+                        <p class="text-size">Staff and TA on this camp</p>
                     
                       </div>
                     </div>
                     
                     <div class="col-sm-4">
     
-                        <img src="{% static '/images/sos.jpg' %}" alt="" class="img-responsive">
+                        <img src="{% static '/images/sos.jpg' %}" alt="" class="img-responsive img-size">
                       </a>
                       <div class="card-container">
                         <h4>006/006</h4>
                         <h3>SOS Camp #8</h3>
-                        <p> Head of SKE16, <br>
+                        <p class="text-size">  Head of SKE16, <br>
                           Committee Team for organize this event
                     
                         </p>
@@ -145,22 +137,13 @@
         </div>
         <!--/carousel-inner--> 
         <a class="left carousel-control" href="#myCarousel" data-slide="prev">‹</a>
-
         <a class="right carousel-control" href="#myCarousel" data-slide="next">›</a>
      </div>
-
-
-
     <!--/myCarousel-->
     </div>
-
-
-
     </div>
   </div>
 </div>
-
-
 <footer class="footer-container text-center">
     <div class="container">
       <div class="row">
@@ -170,14 +153,10 @@
       </div>
     </div>
   </footer> 
-
 <script>
   document.addEventListener("DOMContentLoaded", function (event) {
      navActivePage();
   });
 </script>
-
-
 <script type="text/javascript" src="{% static '/js/home.js' %}"></script></body>
-
 </html>

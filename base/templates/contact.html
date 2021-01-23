@@ -57,16 +57,16 @@
           <div class="row">
             <div class="col-md-10 col-md-offset-1">
                   <div class="row">
-                    <div class="col-md-7">
+                    <div class="col-md-7 ">
                         {% block contact %}
-                      <form method="POST" >
+                      <form method="POST" class="text-size">
                           {% csrf_token %}
                           {{ form.as_p }}
                           <input type="submit" value="Send">
                       </form>
                       {% endblock %}
                     </div>
-                    <div class="col-md-5 address-container">
+                    <div class="col-md-5 address-container text-size">
                       <ul class="list-unstyled">
                         <li>
                           <span class="fa-icon">
