@@ -10,16 +10,18 @@ Prerequisites
 Project setup   
 ---
 * Clone the project    
-`❯ git clone https://github.com/bameethanida/Portfolio.git`  
+```$ git clone https://github.com/bameethanida/Portfolio.git```  
+* Go to the directory     
+```$ cd Portfolio```  
 * Install dependencies    
-`❯ pip3 install -r requirements.txt`  
+```$ pip3 install -r requirements.txt```  
 * Config the Database   
-`❯ python3 manage.py makemigrations`    
-`❯ python3 manage.py migrate` 
+```$ python3 manage.py makemigrations```    
+```$ python3 manage.py migrate``` 
 
 Run project
 ---
-`❯ python3 manage.py runserver`
+```$ python3 manage.py runserver```
 
  ### The website will run on http://127.0.0.1:8000/
  
